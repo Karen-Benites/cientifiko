@@ -1,4 +1,4 @@
-import getData from '../utils/getData.mjs';
+import getData from '../utils/getData';
 
 const Home = async () => {
   const characters = await getData();
