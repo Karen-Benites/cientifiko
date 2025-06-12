@@ -69,8 +69,7 @@ body {
   margin: 20px;
 }
 
-.Characters-item {
-  text-decoration: none;
+.Character-item {
   box-shadow: 8px 14px 38px rgba(39, 44, 49, .06), 1px 3px 8px rgba(39, 44, 49, .03);
   border-radius: 5px;
   margin: 0 0 20px 0;
@@ -79,23 +78,43 @@ body {
   animation-name: fade;
 }
 
-.Characters-item img {
+.Character-item img {
   width: 100%;
   height: auto;
   border-radius: 5px 5px 0 0;
 }
 
-.Characters-item h2 {
-  font-size: 18px;
-  font-weight: 300;
-  padding: 5px 10px;
-  display: flex;
-  justify-content: space-between;
+.Character-item:hover {
+  transform: scale(1.05);
+  transition: transform 0.3s ease-in-out;
 }
 
-.Characters-item a {
+.Character-item a{
   text-decoration: none;
   color: #026C86;
+}
+
+.Character_item-name {
+  font-size: 20px;
+  font-weight: bold;
+  padding: 5px 10px;
+  display: flex;
+  justify-content: center;
+  align-self:center;
+}
+
+@media (max-width: 990px) {
+  .Characters {
+    grid-template-columns: repeat(2, 1fr);
+    place-items: center;
+  }
+}
+
+@media (max-width: 702px) {
+  .Characters {
+    grid-template-columns: repeat(1, 1fr);
+    place-items: center;
+  }
 }
 
 @keyframes fade {

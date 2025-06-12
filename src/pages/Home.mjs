@@ -9,7 +9,7 @@ const Home = async () => {
       <article class="Character-item">
         <a href="#/${character.id}/">
           <img src="${character.image}" alt="${character.name}">
-          <h2>${character.name}</h2>
+          <h2 class= "Character_item-name" >${character.name}</h2>
         </a>
       </article>
       ` ).join('')}
